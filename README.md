@@ -79,9 +79,9 @@ for num in 1..<101 where num % 10 == 5 {
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
+answer:
 ```
 swift
-answer:
 for num in 1...40 where num % 10 == 7 {
     print(num)
 }
@@ -260,9 +260,9 @@ No difference, the console log would print "i = 1" up to "i = 10" for both of th
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
+answer: 
 ```
 swift
-answer:
 Break exits the loop, meanwhile continue loops the value back and continues on to the next value (essentially it ignores the value). 
 ```
 ***
@@ -346,7 +346,7 @@ Write code that prints out all the points in the area bounded by (0,0), (10,0), 
 
 answer: 
 ```
-swift 
+swift
 let points = [(0,0), (10, 0), (0, 10), (10, 10)]
 print(points)
 ```
