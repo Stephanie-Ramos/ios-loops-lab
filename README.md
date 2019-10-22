@@ -30,7 +30,7 @@ Write code that prints all the numbers from 142 to 159, **exclusive.**
 answer: 
 ```
 Swift 
-for num in 142..<160 {
+for num in 142..<159 {
     print(num)
 }
 ```
@@ -70,7 +70,7 @@ Write code that prints all the numbers that end in a **5** from 1 to 100, **excl
 answer:
 ```
 switch
-for num in 1..<101 where num % 10 == 5 {
+for num in 1..<100 where num % 10 == 5 {
     print(num)
 }
 ```
@@ -138,10 +138,18 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 `Print out numbers: 31, 35, 40 to 60.`
 
 answer:
-```
-swift
-for num in 20...150 where num == 31 || num == 35 || num == 40 || num == 60 {
-    print(num)
+```swift
+for num in 20...150 {
+    switch num {
+    case 31:
+        print(num)
+    case 35:
+        print(num)
+    case 40...60:
+        print(num)
+    default:
+        break
+    }
 }
 ```
 ***
